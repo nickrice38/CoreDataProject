@@ -11,5 +11,7 @@ import CoreData
 
 @objc(Candy)
 public class Candy: NSManagedObject {
+    
+    public var wrappedName: String { name ?? "Unknown Candy" }
 
 }
